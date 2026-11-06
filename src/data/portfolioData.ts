@@ -273,9 +273,9 @@ export const PROJECTS: Project[] = [
     tagline: 'Cinematic Movie & TV Series Exploration Engine',
     description:
       'A high-performance media discovery app powered by TMDB API, featuring dynamic movie discovery, genre filtering, trailer integration, and infinite scroll pagination.',
-    role: 'Frontend Engineer',
+    role: 'Full-Stack Engineer',
     technologies: ['React', 'JavaScript', 'CSS3', 'REST API', 'Vite'],
-    category: 'Frontend',
+    category: 'Full-Stack',
     liveUrl: 'https://movix-theta-five.vercel.app/',
     featured: false,
     architecture: 'React (Vite) → TMDB Public REST API → Client-side Caching',
