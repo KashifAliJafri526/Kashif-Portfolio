@@ -1,4 +1,4 @@
-import type { Project, Skill, ExperienceItem, NavItem } from '../types';
+﻿import type { Project, Skill, ExperienceItem, NavItem } from '../types';
 
 export const PERSONAL_INFO = {
   name: 'Kashif Ali Jafri',
@@ -7,14 +7,14 @@ export const PERSONAL_INFO = {
   education: 'B.Tech Computer Science',
   status: 'Open to Opportunities',
   bio: 'Driven Junior MERN Stack Developer with a strong computer science foundation (B.Tech CS). Focused on architecting scalable full-stack web applications, clean RESTful APIs, and responsive, interactive frontend experiences.',
-  shortPitch: 'Transforming ideas into high-performance web systems using React, Node.js, Express, and MongoDB — with an eye for modern interactive UI and robust architecture.',
+  shortPitch: 'Transforming ideas into high-performance web systems using React, Node.js, Express, and MongoDB â€” with an eye for modern interactive UI and robust architecture.',
   socials: {
     github: 'https://github.com/#kashif-ali-jafri',
     linkedin: 'https://linkedin.com/in/#kashif-ali-jafri',
     email: 'kashif.dev@example.com',
   },
   stats: [
-    { label: 'Core Projects Built', value: '6+' },
+    { label: 'Core Projects Built', value: '8' },
     { label: 'Primary Tech Stack', value: 'MERN' },
     { label: 'Engineering Focus', value: 'Full-Stack' },
     { label: 'Degree', value: 'B.Tech CS' },
@@ -25,7 +25,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects', badge: '6' },
+  { label: 'Projects', href: '#projects', badge: '8' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -166,7 +166,7 @@ export const PROJECTS: Project[] = [
     category: 'Full Stack',
     liveUrl: 'https://www.msmartchandigarh.com/',
     featured: true,
-    architecture: 'React SPA → Node.js Express Gateway → MongoDB Document Store',
+    architecture: 'React SPA â†’ Node.js Express Gateway â†’ MongoDB Document Store',
     metrics: [
       { label: 'Modules', value: '8+' },
       { label: 'Auth Tier', value: 'Role-Based' },
@@ -194,7 +194,7 @@ export const PROJECTS: Project[] = [
     category: 'Enterprise',
     liveUrl: 'https://my-ems-fawn.vercel.app/',
     featured: true,
-    architecture: 'React + TypeScript → JWT Auth Middleware → MongoDB Aggregations',
+    architecture: 'React + TypeScript â†’ JWT Auth Middleware â†’ MongoDB Aggregations',
     metrics: [
       { label: 'Access Roles', value: '3-Tier' },
       { label: 'Auth Token', value: 'JWT / Bcrypt' },
@@ -222,7 +222,7 @@ export const PROJECTS: Project[] = [
     category: 'Full Stack',
     liveUrl: 'https://www.bodhamantra.life/',
     featured: true,
-    architecture: 'React Frontend → RESTful Course APIs → MongoDB Cloud',
+    architecture: 'React Frontend â†’ RESTful Course APIs â†’ MongoDB Cloud',
     metrics: [
       { label: 'Media Stream', value: 'Fluid' },
       { label: 'Progress Save', value: 'Automatic' },
@@ -250,7 +250,7 @@ export const PROJECTS: Project[] = [
     category: 'Full Stack',
     liveUrl: 'https://my-solar-path.vercel.app/',
     featured: true,
-    architecture: 'React (TS) + Tailwind → Express REST Controllers → MongoDB (Mongoose)',
+    architecture: 'React (TS) + Tailwind â†’ Express REST Controllers â†’ MongoDB (Mongoose)',
     metrics: [
       { label: 'Calculation Engine', value: '<50ms' },
       { label: 'Lead Flow', value: 'Automated' },
@@ -278,7 +278,7 @@ export const PROJECTS: Project[] = [
     category: 'Full Stack',
     liveUrl: 'https://movix-theta-five.vercel.app/',
     featured: false,
-    architecture: 'React (Vite) → TMDB Public REST API → Client-side Caching',
+    architecture: 'React (Vite) â†’ TMDB Public REST API â†’ Client-side Caching',
     metrics: [
       { label: 'Search Latency', value: 'Debounced' },
       { label: 'Catalog Depth', value: '10,000+' },
@@ -306,7 +306,7 @@ export const PROJECTS: Project[] = [
     category: 'Frontend',
     liveUrl: 'https://www.stechinterior.store/',
     featured: false,
-    architecture: 'React Client → Custom CSS Animations → Inquiry Handling Pipeline',
+    architecture: 'React Client â†’ Custom CSS Animations â†’ Inquiry Handling Pipeline',
     metrics: [
       { label: 'Gallery Layout', value: 'Masonry' },
       { label: 'Interactive Lightbox', value: 'Custom' },
@@ -321,6 +321,73 @@ export const PROJECTS: Project[] = [
       'Interactive visual project gallery with lightbox and category filtering',
       'Client inquiry and project quotation request workflow',
       'Pixel-perfect layout with refined typography and modern aesthetics',
+    ],
+  },
+
+  {
+    id: 'ghosttrace',
+    title: 'GhostTrace',
+    tagline: 'Real-Time Log Monitoring & AI Error Intelligence',
+    description:
+      'A full-stack monitoring and error intelligence platform designed to collect logs from multiple projects, monitor application activity in real time, group recurring errors, and assist developers with AI-powered debugging insights.',
+    role: 'Full-Stack Developer',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Mongoose',
+      'Socket.IO',
+      'Gemini AI',
+      'JWT',
+      'Zod',
+    ],
+    category: 'Full Stack',
+    liveUrl: 'https://ghost-trace-hazel.vercel.app/',
+    featured: true,
+    architecture:
+      'React + Socket.IO Client → Express API + Socket.IO Server → MongoDB → Gemini AI Analysis',
+    challenges: [
+      'Designing a multi-project log ingestion workflow using project-specific API keys',
+      'Implementing real-time log updates and grouping recurring application errors',
+      'Integrating AI-powered error analysis and saving analysis results for later reference',
+    ],
+    highlights: [
+      'Real-time log monitoring with Socket.IO and project-based log collection',
+      'Error grouping and OPEN, RESOLVED, and IGNORED status management',
+      'Gemini AI-powered error analysis with saved analysis results',
+    ],
+  },
+  {
+    id: 'flow',
+    title: 'FLOW',
+    tagline: 'Completed Custom Underwater-Themed Video.js Skin',
+    description:
+      'A custom video-player skin built for React using Video.js. FLOW transforms the standard player experience with a distinctive underwater submarine-inspired visual direction, custom CSS styling, and a configurable preview workbench.',
+    role: 'Frontend Developer',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Video.js',
+      'Tailwind CSS',
+      'CSS',
+    ],
+    category: 'Frontend',
+    liveUrl: 'https://flow-woad-sigma.vercel.app/',
+    featured: true,
+    architecture:
+      'React Application → Video.js React Integration → Custom CSS Player Skin',
+    challenges: [
+      'Customizing the Video.js player interface while preserving its playback functionality',
+      'Building a configurable preview workbench for different player sizes and aspect ratios',
+      'Creating a consistent underwater-inspired visual experience across player controls and layouts',
+    ],
+    highlights: [
+      'Custom Video.js skin integrated with React',
+      'Underwater submarine-inspired player interface and visual styling',
+      'Configurable preview workbench with aspect ratio, theme, language, and playback settings',
     ],
   },
 ];
@@ -347,7 +414,7 @@ export const EXPERIENCE_MILESTONES: ExperienceItem[] = [
     period: 'Recent',
     location: 'India',
     description: [
-      'Engineered and deployed 6 production-grade web systems spanning renewable energy (Solarpath), municipal civic tech (MSmart Chandigarh), enterprise operations (MyEMS), and ed-tech (BodhMantraa).',
+      'Built and contributed to 8 web projects spanning civic technology, enterprise management, ed-tech, renewable energy, media discovery, monitoring, and interactive video experiences.',
       'Architected modular RESTful APIs with Node.js and Express, implementing JWT authentication, role-based authorization matrices, and MongoDB aggregation pipelines.',
       'Developed responsive, accessible user interfaces with React, TypeScript, and Tailwind CSS, focusing on maintainable component architecture and fast render cycles.',
     ],
@@ -369,3 +436,4 @@ export const EXPERIENCE_MILESTONES: ExperienceItem[] = [
     type: 'Milestone',
   },
 ];
+

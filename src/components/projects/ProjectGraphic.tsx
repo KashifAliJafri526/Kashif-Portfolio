@@ -1,5 +1,5 @@
-import React from 'react';
-import { Sun, Building2, Users, HeartPulse, Film, Home, Activity } from 'lucide-react';
+﻿import React from 'react';
+import { Sun, Building2, Users, HeartPulse, Film, Home, Activity, Waves, Play } from 'lucide-react';
 
 interface ProjectGraphicProps {
   id: string;
@@ -81,11 +81,11 @@ export const ProjectGraphic: React.FC<ProjectGraphicProps> = ({ id }) => {
               <span className="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                 Admin
               </span>
-              <span>→</span>
+              <span>â†’</span>
               <span className="px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
                 HR
               </span>
-              <span>→</span>
+              <span>â†’</span>
               <span className="px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">
                 Staff
               </span>
@@ -152,6 +152,67 @@ export const ProjectGraphic: React.FC<ProjectGraphicProps> = ({ id }) => {
         </div>
       );
 
+    case 'ghosttrace':
+      return (
+        <div className="relative w-full h-48 bg-gradient-to-br from-[#101d20] to-[#030b0d] overflow-hidden flex items-center justify-center p-6 border-b border-emerald-500/20">
+          <div className="absolute inset-0 cyber-grid opacity-40" />
+          <div className="relative z-10 w-full max-w-56 space-y-3">
+            <div className="flex items-center justify-between text-[10px] font-mono">
+              <span className="text-emerald-300">GHOSTTRACE // MONITOR</span>
+              <span className="flex items-center gap-1 text-emerald-400">
+                <Activity className="w-3 h-3 animate-pulse" />
+                LIVE
+              </span>
+            </div>
+            <div className="rounded-lg bg-[#071214]/95 border border-emerald-500/25 p-3 space-y-2 font-mono text-[10px]">
+              <div className="flex items-center gap-2 text-red-400">
+                <span>●</span>
+                <span>ERROR</span>
+                <span className="text-slate-500 ml-auto">OPEN</span>
+              </div>
+              <div className="text-slate-300">Database connection failed</div>
+              <div className="h-px bg-emerald-500/15" />
+              <div className="flex items-center gap-2 text-amber-300">
+                <span>●</span>
+                <span>WARNING</span>
+                <span className="text-slate-500 ml-auto">TRACKED</span>
+              </div>
+              <div className="text-slate-400">Request latency elevated</div>
+              <div className="flex items-center gap-2 pt-1 text-emerald-300">
+                <Activity className="w-3 h-3" />
+                <span>AI ERROR INTELLIGENCE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+
+    case 'flow':
+      return (
+        <div className="relative w-full h-48 bg-gradient-to-br from-[#062a38] via-[#041824] to-[#020b13] overflow-hidden flex items-center justify-center p-6 border-b border-cyan-400/20">
+          <div className="absolute inset-0 cyber-grid opacity-30" />
+          <div className="absolute -bottom-12 left-0 right-0 h-28 rounded-[50%] bg-cyan-500/10 blur-2xl" />
+          <div className="relative z-10 w-52 rounded-xl border border-cyan-300/30 bg-[#03131d]/90 p-3 shadow-[0_0_30px_rgba(6,182,212,0.12)]">
+            <div className="flex items-center justify-between text-[9px] font-mono text-cyan-200 mb-3">
+              <span>FLOW // UNDERWATER PLAYER</span>
+              <Waves className="w-4 h-4 text-cyan-400" />
+            </div>
+            <div className="h-20 rounded-lg border border-cyan-400/20 bg-gradient-to-br from-[#0b4657] to-[#061a2a] flex items-center justify-center relative overflow-hidden">
+              <div className="absolute bottom-2 left-3 right-3 h-px bg-cyan-300/30" />
+              <div className="absolute bottom-3 left-7 w-12 h-5 rounded-t-full border border-cyan-300/40 opacity-70" />
+              <div className="w-9 h-9 rounded-full bg-cyan-400/15 border border-cyan-300/50 flex items-center justify-center shadow-[0_0_15px_rgba(34,211,238,0.25)]">
+                <Play className="w-4 h-4 text-cyan-200 ml-0.5" />
+              </div>
+            </div>
+            <div className="flex items-center gap-2 mt-3">
+              <div className="h-1 flex-1 rounded-full bg-slate-700 overflow-hidden">
+                <div className="h-full w-2/5 bg-cyan-400 rounded-full" />
+              </div>
+              <span className="text-[9px] font-mono text-cyan-200">FLOW</span>
+            </div>
+          </div>
+        </div>
+      );
     case 'stech-interior':
     default:
       return (
@@ -170,7 +231,7 @@ export const ProjectGraphic: React.FC<ProjectGraphicProps> = ({ id }) => {
                 Architectural Showcase
               </div>
               <div className="flex justify-center gap-1 mt-1 text-[9px] font-mono text-slate-400">
-                <span>Lightbox</span> • <span>Portfolio</span> • <span>Inquiry</span>
+                <span>Lightbox</span> â€¢ <span>Portfolio</span> â€¢ <span>Inquiry</span>
               </div>
             </div>
           </div>
@@ -178,3 +239,4 @@ export const ProjectGraphic: React.FC<ProjectGraphicProps> = ({ id }) => {
       );
   }
 };
+
